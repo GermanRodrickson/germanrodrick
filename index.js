@@ -1,14 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import home-page from './src/components/home-page/home-page';
-import Prueba1 from './src/components/prueba1';
+import Homepage from './src/components/layout/Homepage';
 
 const app = document.getElementById('app');
 
 
 render(
   <div>
-      <home-page />
+      <Homepage />
   </div>,
 
-  app);
+app);
