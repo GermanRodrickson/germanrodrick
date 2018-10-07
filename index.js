@@ -1,6 +1,8 @@
+'use strict';
+
 import React from 'react';
 import { render } from 'react-dom';
-import Homepage from './src/components/layout/Homepage';
+import Homepage from './src/layout/Homepage';
 
 const app = document.getElementById('app');
 
