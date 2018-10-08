@@ -18,10 +18,17 @@ const List = styled(Box)`
   font-size: 20px;
 `;
 
-const Container = styled(Flex)`
+const Container = styled.section`
 
 
-`
+`;
+
+const FlexContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-top: -270px;
+`;
 
 
 class Nav extends Component {
@@ -29,14 +36,12 @@ class Nav extends Component {
     return (
       <Container>
         <Name>German R. Ojeda</Name>
-        <Flex
-          justify-content='flex-end'
-          flex-direction='row'>
+        <FlexContainer>
           <List>About</List>
           <List>Experience</List>
           <List>Education</List>
           <List>Contact</List>
-        </Flex>
+        </FlexContainer>
       </Container>
     );
   }

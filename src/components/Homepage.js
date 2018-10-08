@@ -32,8 +32,9 @@ const Btns = styled(Button)`
 
 class Homepage extends Component {
   render() {
-    return <Flex justifyContent="space-around" alignItems="center">
-        <Box>
+    return (
+    <Flex justifyContent="space-around" alignItems="center">
+        <Box mb={50}>
           <Title>Frontend Developer</Title>
           <Paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -44,7 +45,8 @@ class Homepage extends Component {
         <Btns bg='magenta'>Know more</Btns> 
         </Box>
         <Title>Frontend Developer</Title>
-      </Flex>;
+      </Flex>
+    )
   }
 }
 
