@@ -4,11 +4,18 @@ import React from 'react';
 import { render } from 'react-dom';
 import Homepage from './src/layout/Homepage';
 import Nav from './src/components/Nav';
-import Myname from './src/components/name';
 import styled from "styled-components";
 
 
 const app = document.getElementById('app');
+
+const Container = styled.section`
+
+`;
+
+const Header = styled.section`
+
+`;
 
 const Wrapper = styled.section`
   background-color: #f4f6fa;
@@ -17,7 +24,17 @@ const Wrapper = styled.section`
 
 render(
   <Wrapper>
-      <Homepage /><Nav /><Myname />
-  </Wrapper>,
+    <Header>
+      <Nav />
+    </Header>
+
+  <Container>
+    <Homepage />
+  </Container>
+
+  </Wrapper >,
 
 app);
+
+
+
