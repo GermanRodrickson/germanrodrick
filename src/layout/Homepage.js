@@ -3,32 +3,24 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
+import { Box, Flex, Heading, Text, Button } from "rebass";
 
 const Title = styled.h1`
-  font-size: 1.5em;
+  font-size: 43px;
   text-align: center;
-  color: palevioletred;
-
-  color: ${props => props.theme.main};
-  border: 2px solid ${props => props.theme.main};
+  color: #726cfb;
 `;
-
-const Wrapper = styled.section`
-  padding: 2em;
-  background: #f4f6fa;
-`;
-
-const theme = {
-  main: "mediumseagreen"
-};
 
 class Homepage extends Component {
   render() {
     return (
-      <Wrapper>
-        <Title theme={theme}>German R. Ojeda 1</Title>
-        <Title>German R. Ojeda 2</Title>
-      </Wrapper>
+      <Flex
+        mt={250}
+        justifyContent='space-around'
+        alignItems='center'>
+        <Title>Frontend Developer</Title>
+        <Title>Frontend Developer</Title>
+      </Flex>
     )
   }
 }
