@@ -8,7 +8,7 @@ import { Box, Flex, Heading, Text, Button, Image } from "rebass";
 const Title = styled.h1`
   font-size: 43px;
   color: black;
-  margin-top: 100px;
+  margin-top: 60px;
   margin-bottom: 10px;
 `;
 

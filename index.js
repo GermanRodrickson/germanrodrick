@@ -17,8 +17,6 @@ const app = document.getElementById('app');
 const Wrapper = styled.section`
   background-color: #f4f6fa;
   font-family: "Roboto", sans-serif;
-  padding-right: 150px;
-  padding-left: 150px;
 `;
 
 const Container = styled.section`
@@ -26,14 +24,14 @@ const Container = styled.section`
 `;
 
 const Header = styled.section`
-
+  margin-left: 150px;
+  margin-right: 150px;
 `;
 
-const RSSFooter = styled.section`
-  background-color: #ffffff;
-
+const FooterContainer = styled.section`
+  background: #FFFFFF;
+  padding-top: 30px;
 `;
-
 
 
 render(
@@ -46,9 +44,9 @@ render(
     <Homepage />
   </Container>
 
-  <footer>
+  <FooterContainer>
     <Footer />
-  </footer>
+  </FooterContainer>
 
   </Wrapper >,
 
