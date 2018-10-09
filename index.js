@@ -20,7 +20,8 @@ const Wrapper = styled.section`
 `;
 
 const Container = styled.section`
-
+  margin-left: 200px;
+  margin-right: 200px;
 `;
 
 const Header = styled.section`
@@ -30,7 +31,7 @@ const Header = styled.section`
 
 const FooterContainer = styled.section`
   background: #FFFFFF;
-  padding-top: 30px;
+  padding-top: 50px;
 `;
 
 

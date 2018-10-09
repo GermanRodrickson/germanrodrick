@@ -8,7 +8,7 @@ import { Box, Flex, Heading, Text, Button, Image } from "rebass";
 const Title = styled.h1`
   font-size: 43px;
   color: black;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-bottom: 10px;
 `;
 
@@ -17,18 +17,33 @@ const Paragraph = styled(Text)`
   font-size: 23px;
   width: 500px;
   color: #111111;
-  line-height: 2em;
+  line-height: 1.5em;
 `;
 
 const Btns = styled(Button)`
-  border-radius: 40px;
   width: 200px;
   padding: 20px;
   background-color: #726cfb;
   font-weight: 100;
   margin-top: 20px;
   font-size: 20px;
-`
+  display: inline-block;
+  z-index: 2;
+  box-shadow: 0 0 #ffffff, 8px 6px grey;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    box-shadow: 0 0 #fff, 0px 0px grey;
+    position: relative;
+    top: 3px;
+  }
+`;
+
+const Img = styled.img`
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+`;
 
 class Homepage extends Component {
   render() {
@@ -44,7 +59,12 @@ class Homepage extends Component {
           </Paragraph>
         <Btns bg='magenta'>Know more</Btns> 
         </Box>
-        <Title>Frontend Developer</Title>
+        <Box><Img
+          src="../../content/img/descarga.png"
+          width={450}
+          height={450}
+        />
+        </Box>
       </Flex>
     )
   }

@@ -7,20 +7,20 @@ import { Flex, Box } from "rebass";
 const Name = styled.h2`
   font-size: 26px;
   color: #726cfb;
-  padding: 120px 30px;
+  margin: 120px 30px;
   line-height: 20px;
   display: inline-block;
+  transition: 0.5s;
+
+  &:hover {
+    color: red;
+  }
 `;
 
 const List = styled(Box)`
   color: #726cfb;
-  padding: 120px 30px;
+  margin: 120px 30px;
   font-size: 20px;
-`;
-
-const Container = styled.section`
-
-
 `;
 
 const FlexContainer = styled.div`
@@ -34,7 +34,7 @@ const FlexContainer = styled.div`
 class Nav extends Component {
   render() {
     return (
-      <Container>
+      <section>
         <Name>German R. Ojeda</Name>
         <FlexContainer>
           <List>About</List>
@@ -42,7 +42,7 @@ class Nav extends Component {
           <List>Education</List>
           <List>Contact</List>
         </FlexContainer>
-      </Container>
+      </section>
     );
   }
 }
