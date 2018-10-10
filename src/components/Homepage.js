@@ -21,21 +21,23 @@ const Paragraph = styled(Text)`
 `;
 
 const Btns = styled(Button)`
-  width: 200px;
-  padding: 20px;
-  background-color: #726cfb;
-  font-weight: 100;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 10px;
+  font-family: yukari, sans-serif;
+  font-size: 24px;
+  color: #662d91;
+  border: 2px solid #662d91;
+  padding: 10px 15px;
+  background: #ffdc71;
+  position: absolute;
   display: inline-block;
   z-index: 2;
-  box-shadow: 0 0 #ffffff, 8px 6px grey;
+  box-shadow: -6px 5px 0 0 #f7931e, -6px 5px 0 2px #58277e;
   transition: all 0.3s ease-out;
 
   &:hover {
-    box-shadow: 0 0 #fff, 0px 0px grey;
-    position: relative;
-    top: 3px;
+    transition: all 0.2s ease-out;
+    box-shadow: -2px 1px 0 0 #f7931e, -2px 1px 0 2px #58277e;
+    transform: translate3d(-4px, 4px, 0);
   }
 `;
 

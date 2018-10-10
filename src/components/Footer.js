@@ -6,8 +6,8 @@ import { Flex, Box } from "rebass";
 
 
 const Img = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   transition: 0.5s;
 
   &:hover {

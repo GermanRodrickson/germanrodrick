@@ -12,9 +12,6 @@ const Name = styled.h2`
   display: inline-block;
   transition: 0.5s;
 
-  &:hover {
-    color: red;
-  }
 `;
 
 const List = styled(Box)`

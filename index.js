@@ -22,6 +22,7 @@ const Wrapper = styled.section`
 const Container = styled.section`
   margin-left: 200px;
   margin-right: 200px;
+  height: 74vh;
 `;
 
 const Header = styled.section`
@@ -45,9 +46,9 @@ render(
     <Homepage />
   </Container>
 
-  <FooterContainer>
+  {/* <FooterContainer>
     <Footer />
-  </FooterContainer>
+  </FooterContainer> */}
 
   </Wrapper >,
 
