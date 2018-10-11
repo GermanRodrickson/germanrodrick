@@ -6,22 +6,27 @@ import { ThemeProvider } from "styled-components";
 import { Box, Flex, Heading, Text, Button, Image } from "rebass";
 
 const Title = styled.h1`
-  font-size: 43px;
-  color: black;
-  margin-top: 20px;
+  font-size: 63px;
+  color: #211520;
   margin-bottom: 10px;
+  letter-spacing: 10px;
 `;
 
 
 const Paragraph = styled(Text)`
   font-size: 23px;
   width: 500px;
-  color: #111111;
+  color: #bcc2cf;
   line-height: 1.5em;
+
+  
+
+  /* color: ${props => props.theme.main};
+  border: 2px solid ${props => props.theme.main}; */
 `;
 
 const Btns = styled(Button)`
-  margin-top: 10px;
+  margin-top: 30px;
   font-family: yukari, sans-serif;
   font-size: 24px;
   color: #662d91;
@@ -47,28 +52,30 @@ const Img = styled.img`
   border-radius: 50%;
 `;
 
+ var handleClick = (event) => {
+ 
+}
+
 class Homepage extends Component {
   render() {
-    return (
-    <Flex justifyContent="space-around" alignItems="center">
+    return <Flex justifyContent="space-around" mt={150}>
         <Box mb={50}>
-          <Title>Frontend Developer</Title>
-          <Paragraph>
+          <Title>Frontend</Title>
+          <Title>Developer</Title>
+          <Paragraph >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
           </Paragraph>
-        <Btns bg='magenta'>Know more</Btns> 
+          <Btns bg="magenta" onClick={handleClick}>
+            Know more
+          </Btns>
         </Box>
-        <Box><Img
-          src="../../content/img/descarga.png"
-          width={450}
-          height={450}
-        />
+        <Box>
+          <Img src="../../content/img/descarga.png" width={450} height={450} />
         </Box>
-      </Flex>
-    )
+      </Flex>;
   }
 }
 

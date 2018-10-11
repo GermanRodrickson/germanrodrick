@@ -22,12 +22,13 @@ const Wrapper = styled.section`
 const Container = styled.section`
   margin-left: 200px;
   margin-right: 200px;
-  height: 74vh;
 `;
 
 const Header = styled.section`
   margin-left: 150px;
   margin-right: 150px;
+  border-bottom: 1px solid black;
+  position: relative;
 `;
 
 const FooterContainer = styled.section`
