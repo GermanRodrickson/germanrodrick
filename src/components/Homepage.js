@@ -6,10 +6,9 @@ import { ThemeProvider } from "styled-components";
 import { Box, Flex, Heading, Text, Button, Image } from "rebass";
 
 const Title = styled.h1`
-  font-size: 63px;
+  font-size: 43px;
   color: #211520;
   margin-bottom: 10px;
-  letter-spacing: 10px;
 `;
 
 
@@ -53,28 +52,27 @@ const Img = styled.img`
 `;
 
  var handleClick = (event) => {
- 
+  console.log(event)
 }
 
 class Homepage extends Component {
   render() {
-    return <Flex justifyContent="space-around" mt={150}>
+    return <Flex justifyContent="space-evenly" mt={150}>
         <Box mb={50}>
-          <Title>Frontend</Title>
-          <Title>Developer</Title>
+        <Title>Frontend Developer</Title>
           <Paragraph >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
           </Paragraph>
-          <Btns bg="magenta" onClick={handleClick}>
+          <Btns onClick={handleClick}>
             Know more
           </Btns>
         </Box>
-        <Box>
+       
           <Img src="../../content/img/descarga.png" width={450} height={450} />
-        </Box>
+        
       </Flex>;
   }
 }
