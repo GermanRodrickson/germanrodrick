@@ -17,10 +17,8 @@ const Paragraph = styled(Text)`
   width: 500px;
   line-height: 1.5em;
 
-  
-
-  /* color: ${props => props.theme.main};
-  border: 2px solid ${props => props.theme.main}; */
+  color: ${props => props.theme.main};
+  border: 2px solid ${props => props.theme.main};
 `;
 
 const Btns = styled(Button)`
@@ -50,19 +48,25 @@ const Img = styled.img`
   float: left;
 `;
 
+var handleClick = (event) => {
+  console.log(theme.main)
+}
+var theme = {
+  main: "mediumseagreen"
+};
 
 class Homepage extends Component {
   render() {
     return <Flex alignItems="center" mt={150}>
         <Box mb={50}>
           <Title>Frontend Developer</Title>
-          <Paragraph>
+        <Paragraph theme={theme}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
           </Paragraph>
-          <Btns onClick={handleClick}>Know more</Btns>
+        <Btns onClick={handleClick}>Know more</Btns>
         </Box>
 
         <Img src="../../content/img/descarga.png" width={450} height={450} /> 
