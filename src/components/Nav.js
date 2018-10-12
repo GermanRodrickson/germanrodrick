@@ -6,14 +6,14 @@ import { Flex, Box } from "rebass";
 
 const Name = styled.h2`
   font-size: 26px;
-  color: #726cfb;
+  color: #29B7FF;
   line-height: 20px;
   position:absolute;
   bottom: 50px;
 `;
 
 const List = styled(Box)`
-  color: #726cfb;
+  color: #29B7FF;
   margin: 50px 30px;
   font-size: 20px;
 `;

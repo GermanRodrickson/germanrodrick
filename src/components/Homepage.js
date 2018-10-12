@@ -15,7 +15,6 @@ const Title = styled.h1`
 const Paragraph = styled(Text)`
   font-size: 23px;
   width: 500px;
-  color: #bcc2cf;
   line-height: 1.5em;
 
   
@@ -26,21 +25,20 @@ const Paragraph = styled(Text)`
 
 const Btns = styled(Button)`
   margin-top: 30px;
-  font-family: yukari, sans-serif;
   font-size: 24px;
-  color: #662d91;
-  border: 2px solid #662d91;
+  color: #FFFFFF;
+  border: 2px solid #29b7ff;
   padding: 10px 15px;
-  background: #ffdc71;
+  background: #0087cb;
   position: absolute;
   display: inline-block;
   z-index: 2;
-  box-shadow: -6px 5px 0 0 #f7931e, -6px 5px 0 2px #58277e;
+  box-shadow: -6px 5px 0 0 #494949, -6px 5px 0 2px #29b7ff;
   transition: all 0.3s ease-out;
 
   &:hover {
     transition: all 0.2s ease-out;
-    box-shadow: -2px 1px 0 0 #f7931e, -2px 1px 0 2px #58277e;
+    box-shadow: -2px 1px 0 0 #494949, -2px 1px 0 2px #29b7ff;
     transform: translate3d(-4px, 4px, 0);
   }
 `;
@@ -49,30 +47,25 @@ const Img = styled.img`
   width: 400px;
   height: 400px;
   border-radius: 50%;
+  float: left;
 `;
 
- var handleClick = (event) => {
-  console.log(event)
-}
 
 class Homepage extends Component {
   render() {
-    return <Flex justifyContent="space-evenly" mt={150}>
+    return <Flex alignItems="center" mt={150}>
         <Box mb={50}>
-        <Title>Frontend Developer</Title>
-          <Paragraph >
+          <Title>Frontend Developer</Title>
+          <Paragraph>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
           </Paragraph>
-          <Btns onClick={handleClick}>
-            Know more
-          </Btns>
+          <Btns onClick={handleClick}>Know more</Btns>
         </Box>
-       
-          <Img src="../../content/img/descarga.png" width={450} height={450} />
-        
+
+        <Img src="../../content/img/descarga.png" width={450} height={450} /> 
       </Flex>;
   }
 }
