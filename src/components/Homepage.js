@@ -51,9 +51,9 @@ const Img = styled.img`
 var handleClick = (event) => {
   console.log(theme.main)
 }
-var theme = {
-  main: "mediumseagreen"
-};
+  var theme = {
+    main: "mediumseagreen"
+  };
 
 class Homepage extends Component {
   render() {
