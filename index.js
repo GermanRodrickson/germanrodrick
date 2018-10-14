@@ -48,9 +48,9 @@ render(
     <Homepage />
   </Container>
 
-  {/* <section>
+  <section>
     <Referents />
-  </section> */}
+  </section>
 
   {/* <FooterContainer>
     <Footer />
