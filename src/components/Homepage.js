@@ -49,27 +49,29 @@ const Img = styled.img`
 `;
 
 var handleClick = (event) => {
-  console.log(theme.main)
+  console.log(props)
+  
 }
-  var theme = {
-    main: "mediumseagreen"
-  };
+
+var colorP = {
+  main: "mediumseagreen"
+};
 
 class Homepage extends Component {
   render() {
     return <Flex alignItems="center" mt={150}>
         <Box mb={50}>
           <Title>Frontend Developer</Title>
-        <Paragraph theme={theme}>
+          <Paragraph theme={colorP}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
           </Paragraph>
-        <Btns onClick={handleClick}>Know more</Btns>
+          <Btns onClick={handleClick}>Know more</Btns>
         </Box>
 
-        <Img src="../../content/img/descarga.png" width={450} height={450} /> 
+        <Img src="../../content/img/descarga.png" width={450} height={450} />
       </Flex>;
   }
 }

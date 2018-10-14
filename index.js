@@ -9,7 +9,7 @@ import styled from "styled-components";
 import Homepage from "./src/components/Homepage";
 import Nav from "./src/components/Nav";
 import Footer from "./src/components/Footer";
-import Contact from "./src/components/Contact";
+import Referents from "./src/components/Referents";
 
 
 const app = document.getElementById('app');
@@ -44,13 +44,13 @@ render(
       <Nav />
     </Header>
 
-  {/* <Container>
+  <Container>
     <Homepage />
-  </Container> */}
+  </Container>
 
-  <section>
-    <Contact />
-  </section>
+  {/* <section>
+    <Referents />
+  </section> */}
 
   {/* <FooterContainer>
     <Footer />

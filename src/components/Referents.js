@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Box, Text } from "rebass";
 
+
 const ContainerOne = styled(Box)`
   background-color: red;
   height: 100%;
@@ -90,7 +91,7 @@ const TitleContainer = {
   main: "25px"
 };
 
-class Contact extends Component {
+class Referents extends Component {
   render() {
     return <section>
         <ExplanationText>
@@ -136,4 +137,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Referents;
